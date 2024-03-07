@@ -6,7 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class LoginService {
-  baseUrl:string ="http://localhost:8181/login";
+  // This is IP address of EC2 instance in AWS
+  baseUrl:string ="http://18.216.208.177:8181/login";
   
   constructor(public httpClient:HttpClient) { } // DI 
 
