@@ -14,14 +14,14 @@ services:
   angular-container:
     build: ./frontend/e-shopping-app/
     container_name: angular-container
-    image: akashkale/frontend-e-shopping:v1
+    image: frontend-e-shopping:v1
     ports:
       - 80:80
     restart: always  
   springboot-container:
     build: ./backend/Login-micro-service-app/Login-micro-service-app/
     container_name: springboot-container 
-    image: akashkale/bakend-e-shopping-login-service:v1
+    image: bakend-e-shopping-login-service:v1
     depends_on:
       - mysql-container
     ports:
